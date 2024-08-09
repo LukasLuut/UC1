@@ -7,19 +7,22 @@ Lucas William
 
 -------------PLANEJAMENTO DE SOFTWARE-------------
 
-Projeto de sistema de gerenciamento para venda de bebidas
+REQUISITOS FUNCIONAIS: 
 
-O sistema deve:
+Projeto de sistema de gerenciamento para ponto de venda de bebidas
 
-1.Sistema de Login
+O sistema deve ter:
+
+1. Sistema de Login
 
 Cadastro de entrada de funcionários para o sistema principal, que deve incluir:
 
 - Registro de horário de login e logout do usuário;
 - Sistema de login incluindo usuário e senha; 
 - Registro de vendas no nome do usuário;
+- Painel do usuário (funcionário e cliente) 
 
-2.Cadastrar produtos
+2. Cadastrar produtos
 
 O sistema de cadastro de bebidas deve incluir as informações de todas as bebidas:
 
@@ -42,8 +45,7 @@ O sistema deve incluir todas as entradas e saídas de produtos, como horário, v
 - Quantidades de produtos movimentados
 - Quantidade de produtos no estoque antes e depois da movimentação
 - Apresentar gráfico de movimentação com opções de diário, semanal, mensal e anual
-
-
+- Deve possibilitar edição em tabelas de estoque para correção de erros
 
 4. Cadastro de usuário
 
@@ -52,13 +54,37 @@ Sistema de cadastro de usuário que deve incluir informações como:
 PARA CLIENTES:
 - Documento do cliente (RG, CNH, CPF) que comprove maior idade;
 - Telefone/celular para contato;
+- Endereço
 
 PARA FUNCIONÁRIOS:
-- Documento dos funcionários (RG, CNH, CPF);
-- Data de nascimento;
-- Telefone/celular para contato;
+- Documento dos funcionários (RG, CNH, CPF)
+- Data de nascimento
+- Telefone/celular para contato
+- Endereço
 
 5. Mapeamento e alertas para produtos próximos do prazo de validade
 - Deve informar a data de entrada do produto e a data de vencimento
 - Deve apresentar opção de quanto tempo de antecedência deseja receber alertas 
+
+6. Catálogo de vendas online
+- Deve conter Carrinho de compras (registrando vendas no cadastro do cliente) 
+- Deve conter catálogo para vendas online com tele-entrega.
+- Deve conter opções de pagamento e processamento de venda online
+- Deve possibilitar edição no carrinho de compras para dicionar ou retirar itens
+- Deve perguntar se quer o CPF na nota
+
+
+
+REQUISITOS NÃO FUNCIONAIS:
+
+1. As informações confidenciais de clientes e funcionários devem ser criptografadas 
+2. O sistema deve ter interface simples e responsiva 
+3. O sistema deve ser compatível com dispositivos desktop e mobile 
+4. O sistema deve ter também servidor local, para evitar paradas do sistema  
+5. O sistema deve registrar vendas online enquanto conectado a internet, mas continuar funcionando localmente caso desconectado da internet
+6. O sistema deve verificar se o ponto de venda está conectado para possibilitar vendas online pelo aplicativo 
+7. A interface de vendas do usuário funcionário deve ser simples e com poucos botões 
+8. O sistema deve separar permissões de clientes e funcionários, limitando os acessos 
+9. A interface de vendas do usuário *cliente* deve ser limitada visando melhor experiência de navegação
+10.Deve possuir sistema de backup com prazos pré-estabelecidos, local e online.
 
